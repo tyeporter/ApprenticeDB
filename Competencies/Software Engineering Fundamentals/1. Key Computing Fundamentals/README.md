@@ -8,14 +8,17 @@ Computing as seen today is the result of thousands of years of invention and res
 
 The term "Software Engineering" was coined in the 1960s by Margaret Hamilton while she was working on navigational systems at NASA for the Apollo mission. Instead of software being seen as a small component of a bigger system, NASA realized how critical software was in the success of the mission. By the end of the decade, software engineering best practices were being discussed at the NATO Software Engineering Conferences. In the 70s and 80s, modern programming languages like C and C++ are created. These new software technologies enable the development of modern operating system line Unix and other Unix-based systems. In the 1990s while working at CERN, Tim-Berners Lee comes up with the idea of a document information system in which documents/resources link to each other over an internet connection. He creates the first web browser known as "WorldWideWeb" (software) and his ideas ultimately help give rise to what we know as the World Wide Web (internet) today.
 
-There are many different principles within Software Engineering, but the most well knows set of principles within the Software Engineering space is SOLID and DRY. SOLID standing for:
+There are many different principles within Software Engineering space, but the most well known set of principles in modern Software Development are SOLID and DRY. 
+
+SOLID standing for:
 - Single Responsibility Principle
+    - The idea here is when developing software, each class within our software program should focus on a specific task and not deviate from that. For example, we might create a class that is meant to handle client requests to an API. We should not add another responsibility such as storing local data or showing the GUI to this class.
 - Open-Closed Principle
 - Liskov Substitution Principle
 - Interface Segregation Principle 
 - Dependency Inversion Principle
 
-And DRY for "Don't Repeat Yourself".
+and DRY for "Don't Repeat Yourself".
 
 ### Demonstrate an understanding of the history and principles of data management
 
