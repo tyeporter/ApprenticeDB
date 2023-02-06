@@ -8,21 +8,29 @@ Computing as seen today is the result of thousands of years of invention and res
 
 The term "Software Engineering" was coined in the 1960s by Margaret Hamilton while she was working on navigational systems at NASA for the Apollo mission. Instead of software being seen as a small component of a bigger system, NASA realized how critical software was in the success of the mission. By the end of the decade, software engineering best practices were being discussed at the NATO Software Engineering Conferences. In the 70s and 80s, modern programming languages like C and C++ are created. These new software technologies enable the development of modern operating system line Unix and other Unix-based systems. In the 1990s while working at CERN, Tim-Berners Lee comes up with the idea of a document information system in which documents/resources link to each other over an internet connection. He creates the first web browser known as "WorldWideWeb" (software) and his ideas ultimately help give rise to what we know as the World Wide Web (internet) today.
 
-There are many different principles within Software Engineering space, but the most well known set of principles in modern Software Development are SOLID and DRY. 
+There are many different principles within Software Engineering space, but the most well known set of principles in modern Software Development are SOLID and DRY.
 
 SOLID standing for:
 - Single Responsibility Principle
-    - The idea here is when developing software, each class within our software program should focus on a specific task and not deviate from that. For example, we might create a class that is meant to handle client requests to an API. We should not add another responsibility such as storing local data or showing the GUI to this class.
+    - The idea here is when developing software, each class within our software program should focus on a specific task and not deviate from that. For example, we might create a class that is meant to handle client requests to an API. All this class is responsible for is fetching and returning data. Nothing more. We **should not** add another responsibility such as transforming data, storing data or showing the GUI to this class.
 - Open-Closed Principle
+    - This principle is about keeping our classes **closed to modification** but **open to extension**. The idea here is to create entities (classes, interfaces, etc.) that enabled flexibility and extendability. For example, we might be building UI components and we need a generic "hoverable" component that can represent different kinds of components (text, buttons, containers, etc.). Instead of creating a `Hoverable` class that will likely need modification overtime when we have new requirements, we can create a `Hoverable` *interface* that separate UI component classes can implement in their own way.
 - Liskov Substitution Principle
-- Interface Segregation Principle 
+    - This principle has to do with subclasses and inheritance. In any given situation, a subclass should be able to substitute for its parent class without any unexpected output/results. For example, we may have a base `Laptop` class that has subclasses `Macintosh` and `Windows`. We expect that when we call the `toString()` method on a `Laptop` object, it prints the name, model, and specifications of the device. If the `Macintosh` object prints its memory address where we expect to see laptop details, that's a violation of the Liskov Substitution Principle.
+- Interface Segregation Principle
+    - The idea here is to create multiple interfaces for specific functionality rather than creating a single general-purpose interface.
 - Dependency Inversion Principle
+    - The Dependency Inversion Principle is about preventing tight coupling by depending on general-purpose and concrete classes. As exemplified in the Open-Closed Principle, our classes should instead depend on flexible interfaces and abstract classes.
 
-and DRY for "Don't Repeat Yourself".
+and DRY for "Don't Repeat Yourself". The DRY principle has to do with preventing redundancy when writing code.
 
 ### Demonstrate an understanding of the history and principles of data management
 
+Data management refers to the act of collecting, storing, and utilizing data to the best of our ability using industry best practices. Struggling with handling data the previous decades, organizations started practicing data management formally in the 1960s. Back then, data management involved storing data in physical things like punch cards which were stored in data warehouses. As computer technology advanced in areas like storage and software, data management became easier and more efficient. In the 70s, Ted Codd of IBM came up with the Relational Database Model which stores data in tables of related information. He also developed the SQL language. As ideas and technologies in the space improved, Database Management Systems like Oracle and IBM DB2 - which are based off of Codd's ideas - are created and are sold to customers needing Database Management solutions. In the 90s and early 2000s data become more valuable than ever and new solutions like NoSQL databases are developed. Data Science and Management become more important as data is seen as an increasingly valuable asset.
+
 ### Demonstrate an understanding of the history and principles of networking fundamentals
+
+Just like Data Management, we'll find Computer Networking in its infancy in the 1960s. ARPANET (Advanced Research Project Agency Network) was one the first computer networks. It took on many ideas developed in the 50s and 60s such as TCP/IP (Transmission Control Protocol/Internet Protocol) and sending data via "packets."
 
 ### Demonstrate an understanding of the history and principles of infrastructure
 
