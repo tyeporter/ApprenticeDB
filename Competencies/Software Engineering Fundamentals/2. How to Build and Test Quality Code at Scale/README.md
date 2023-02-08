@@ -2,7 +2,7 @@
 
 ### Understand how to build quality code at scale
 
-Building quality code at scale involves adhering to good software engineering principles like SOLID and Clean Architecture and making sure that code is being tested at every step of the Software Development Lifecycle. It also involves using modern practices like Continuous Development and Continuous Integration.
+Building quality code at scale involves adhering to good software engineering practices like SOLID and Clean Architecture and making sure that code is being tested at every step of the Software Development Lifecycle. It also involves using modern practices like Continuous Development and Continuous Integration.
 
 ### Understand the techniques used for ensuring quality
 

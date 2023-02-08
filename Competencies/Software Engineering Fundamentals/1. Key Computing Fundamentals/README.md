@@ -30,21 +30,26 @@ Data management refers to the act of collecting, storing, and utilizing data to 
 
 ### Demonstrate an understanding of the history and principles of networking fundamentals
 
-Just like Data Management, we'll find Computer Networking in its infancy in the 1960s with ARPANET (Advanced Research Project Agency Network) being one of the first wide-area computer networks. ARPANET took from many ideas developed in the 50s and 60s such as TCP/IP (Transmission Control Protocol/Internet Protocol) and packet switching/sending data via "packets." ARPANET influenced future networks like SATNET, BITNET, and ARCNET, and influenced the world-wide network which we know today as the Internet. In the 70s, Ethernet, created by Robert Metcalfe of Xerox and influence by ALOHAnet, would eventually start to become the dominant computer networking standard due to its flexibility and cost effectiveness. Wi-Fi, ethernet's wireless counterpart, was created in the 1980s and uses many of the standards from [IEEE 802](https://en.wikipedia.org/wiki/IEEE_802). 
+Just like Data Management, we'll find Computer Networking in its infancy in the 1960s with ARPANET (Advanced Research Project Agency Network) being one of the first wide-area computer networks. ARPANET took from many ideas developed in the 50s and 60s such as TCP/IP (Transmission Control Protocol/Internet Protocol) and packet switching/sending data via "packets." ARPANET influenced future networks like SATNET, BITNET, and ARCNET, and influenced the world-wide network which we know today as the Internet. In the 70s, Ethernet, created by Robert Metcalfe of Xerox, would eventually start to become the dominant computer networking standard due to its flexibility and cost effectiveness. Wi-Fi, ethernet's wireless counterpart, was created in the 1980s and uses many of the standards from [IEEE 802](https://en.wikipedia.org/wiki/IEEE_802). 
 
-Networking today, for the most part, is based on the OSI (Open System Interconnect) Model which describes network operations and communication. The OSI Model gives us a way to categorize and order the different networking protocols used for transferring data. The OSI Model is usually represented in "layers":
+Networking today, for the most part, is based on the OSI (Open System Interconnect) Model which describes network operations and communication. The OSI Model gives us a way to categorize and order the different networking protocols used for transferring data to and from devices. The OSI Model is usually represented in "layers":
 - Physical Layer (Layer 1)
-    - Represents the physical devices within a network like computers, cables, and radio towers which are responsible for transmitting the data. This data may take different shapes as it's passed from one medium to another.
+    - Represents the physical devices within a network like computers, cables, and radio towers which are responsible for transmitting the data. This data may take on different forms as it's passed from one medium to another.
 - Data Link Layer (Layer 2)
-    - Represents the mechanism that allow us to transfer data to an from physical devices. It include the core protocols and rules that start and stop connections between devices. This is the layer where protocols like Ethernet and DOCSIS-3 function.
+    - Represents the mechanism that allow us to transfer data to and from physical devices. It include the core protocols and rules that start and stop connections between devices. This is the layer where protocols like Ethernet and DOCSIS-3 function.
 - Network Layer (Layer 3)
     - Deals with routing data or "packets" over the physical layer. This is where Internet Protocol (IP) addressing and routing come in. In order for a physical device to send and/or receive data over the internet, it needs a unique address that identifies it.
 - Transport Layer (Layer 4)
-    - This layer 
-- Session Layer
-- Presentation Layer
-- Application Layer
+    - Takes care of the the rules and control flow of data in sessions between devices using standards like Transmission Control Protocol (TCP). 
+- Session Layer (Layer 5)
+    - Deals with orchestration (open, close, resume, etc.) of communication channels (sessions) between devices.
+- Presentation Layer (Layer 6)
+    - Defines the mechanisms for encoding and decoding data that is created or needed by the application layer.
+- Application Layer (Layer 7)
+    - Defines rules regarding end-user applications like web browsers and email clients. This is where Hypertext Transfer Protocol (HTTP) and File Transfer Protocol (FTP) come into the picture.
 
 ### Demonstrate an understanding of the history and principles of infrastructure
+
+The history of computer infrastructure has to do naturally with the history of computing as a whole. Early human computational infrastructure starts with nature. Simple tools like our hands, sticks and pebbles include with tools like hand-written formula, the abacus, 
 
 ### Demonstrate an understanding of the history and principles of integrated development environments
