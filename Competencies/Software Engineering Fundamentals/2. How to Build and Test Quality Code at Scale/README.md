@@ -2,7 +2,7 @@
 
 ### Understand how to build quality code at scale
 
-Building quality code at scale involves adhering to good software engineering practices like SOLID and Clean Architecture and making sure that code is being tested at every step of the Software Development Lifecycle. It also involves using modern practices like Continuous Development and Continuous Integration.
+Building quality code at scale involves adhering to good software engineering practices like Agile development, Scrum, SOLID principles and Clean Architecture. It also involves using modern practices like Continuous Development and Continuous Integration and making sure that code is being tested at every step of the Software Development Lifecycle.
 
 ### Understand the techniques used for ensuring quality
 
@@ -18,7 +18,7 @@ Building quality code at scale involves adhering to good software engineering pr
 
 ### Understand the successful use of test coverage tools
 
-The successful use of test coverage tools involves using test coverage metrics to make informed decisions on how we can improve the quality of our tests and essentially increase the percentage of code covered by tests.
+The successful use of test coverage tools involves using coverage metrics to make informed decisions on how we can improve the quality of our tests and essentially increase the percentage of code covered by tests.
 
 ### Understand successful use of performance testing
 

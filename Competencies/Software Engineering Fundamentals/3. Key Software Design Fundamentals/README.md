@@ -10,4 +10,11 @@
 
 ### Demonstrate ability to recognize and apply design patterns to address a problem
 
+
+
 ### Demonstrate proficiency in languages like Java, Python, Node JS, or JavaScript
+
+- [The Complete Java Development Bootcamp Certificate](/Certificates/Java%20Bootcamp%20Certificate.pdf)
+- [Core Python Certificate](/Certificates/Core%20Python%20Certificate.pdf)
+- [The Modern JavaScript Bootcamp Certificate](/Certificates/Modern%20JavaScript%20Bootcamp%20Certificate.pdf)
+- [Node.js: Getting Started Certificate](/Certificates/Node.js%20Certificate.pdf)
