@@ -40,7 +40,7 @@ In the above example, the caret symbol (`^`) signifies that we want to use the l
 
 ![](/Images/merging.png)
 ![](/Images/versioning.png)
-
+> Parts redacted for privacy
 
 
 ### Demonstrate usage of dependencies and libraries from within and outside the team
