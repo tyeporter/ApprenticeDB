@@ -25,7 +25,7 @@ I use clean code and SOLID principles in many of many example projects including
 
 ### Explain the various clean coding principles represented by the acronym SOLID
 
-I answered this previously in [1. Key Computing Fundamentals](https://github.com/4orter/ApprenticeDB/tree/main/Competencies/Software%20Engineering%20Fundamentals/1.%20Key%20Computing%20Fundamentals)
+Previously answered in [1. Key Computing Fundamentals](https://github.com/4orter/ApprenticeDB/tree/main/Competencies/Software%20Engineering%20Fundamentals/1.%20Key%20Computing%20Fundamentals)
 
 
 
