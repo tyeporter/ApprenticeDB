@@ -12,7 +12,7 @@ I demonstrated all of the listed professional skills while working on the ZScala
 - *Being a Trusted Advisor*
     - Meeting with the SRE team (Bangalore) every morning for their questions regarding Threat Relay and helping with testing and validation 
 - *Cultural Intelligence*
-    - Adapting to different communication styles within the different teams within the MaaS360 Org.
+    - Adapting to different communication styles of the different teams within the MaaS360 Org.
 - *Emotional Intelligence*
     - Understanding the need to take breaks when needed and to use deadline pressure in a positive way by communicating effectively
 - *Giving and Receiving feedback*
