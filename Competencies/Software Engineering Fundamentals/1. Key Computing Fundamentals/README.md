@@ -28,6 +28,15 @@ and DRY for "Don't Repeat Yourself". If we are following the DRY principle, we a
 
 Data management refers to the act of collecting, storing, and utilizing data to the best of our ability using industry best practices. Struggling with handling data the previous decades, organizations started practicing data management formally in the 1960s. Back then, data management involved storing data in physical things like punch cards which were stored in data warehouses. As computer technology advanced in areas like storage and software, data management became easier and more efficient. In the 70s, Ted Codd of IBM came up with the Relational Database Model which stores data in tables of related information. He also developed the SQL language. As ideas and technologies in the space improved, Database Management Systems like Oracle and IBM DB2 - which are based off of Codd's ideas - were created and are sold to customers needing Database Management solutions. In the 90s and early 2000s data become more valuable than ever and new solutions like NoSQL databases are developed. Data Science and Management become more important as data is seen as an increasingly valuable asset.
 
+There are many principles when it comes to data collection and management, most of which have to do with data science. First, since we're often dealing with different types of variables (names, locations, numbers, etc.) it helps to organize the data. We often are dealing with two types of variables:
+- Numerical
+    - These are variables that measure something; they typically have a number and a unit of measurement. For example, "5 miles" or "30 minutes".
+- Categorical
+    - These are variables that categorize something; they typically represent a number of choices. For example, the number "1" on a "1 - 5 scale" or "Doberman" in a list of dog breeds.
+
+There are other principles when it comes to data collection like insuring data validity and removing bias from data analysis. For example, being aware of confirmation bias is important so that we are not interpreting data in a way that supports our own original views or hypothesis.
+
+
 ### Demonstrate an understanding of the history and principles of networking fundamentals
 
 Just like Data Management, we'll find Computer Networking in its infancy in the 1960s with ARPANET (Advanced Research Project Agency Network) being one of the first wide-area computer networks. ARPANET took from many ideas developed in the 50s and 60s such as TCP/IP (Transmission Control Protocol/Internet Protocol) and packet switching/sending data via "packets." ARPANET influenced future networks like SATNET, BITNET, and ARCNET, and influenced the world-wide network which we know today as the Internet. In the 70s, Ethernet, created by Robert Metcalfe of Xerox, would eventually start to become the dominant computer networking standard due to its flexibility and cost effectiveness. Wi-Fi, ethernet's wireless counterpart, was created in the 1980s and uses many of the standards from [IEEE 802](https://en.wikipedia.org/wiki/IEEE_802). 
