@@ -54,7 +54,7 @@ After doing this problem set, I was able to:
 
 After building this project, I was able to:
 - Learn to gather requirements for a project
-- Understand ho to choose the right technology stack for the job
+- Understand how to choose the right technology stack for the job
 - Understand how to handle global state in a frontend application
 - Understand how to persist data on the frontend using the browser's local storage
 
