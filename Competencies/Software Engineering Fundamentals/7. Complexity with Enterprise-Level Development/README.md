@@ -1,18 +1,43 @@
 # Understand and navigate the complexity associated with enterprise-level development
 
-### Articulate the complexities and challenges associated with enterprise-scale development
+## Table of Contents
+- [Explanation](#explanation)
+- [Example](#example)
+- [Certificates](#certificates)
 
-This also answers:
-- "Understand how to apply security at enterprise"
-- "Understand how to scale solutions"
-- "Understand how to manage performance at enterprise"
+### Explanation
 
-[🎗️ Large Scale Systems Architecture Certificate](/Certificates/Large%20Scale%20Systems%20Architecture.pdf)
+There are several challenges we have to consider when developing for large-scale enterprise systems such as: 
+- Gathering and understand the requirements for a system / product
+- Understanding functional requirements and quality attributes of the system
+- Ability to learn new technologies on the fly
+- Consulting with the right people where our expertise is not so strong
+- Understanding system constraints and what could be done within the time frame
+- Ability to navigate different cross-team communication styles
+- Timely delivery of a product, feature, or service
+- And many more...
 
-[🎗️ Enterprise Security Certificate](/Certificates/Enterprise%20Security%20Certificate.pdf)
+### Example
+An example that I can go to is when I worked on the ZScalar project. There were a few complex situations that I have to deal with and navigate while working in this project such as:
+- *Gathering and clearly understanding new requirements*
+    - **Solution**: I spent a week meeting with my project manager to go over requirements, share my solutions and understanding, and testing several ideas
+    - **Outcome**: I learned how to be proactive about getting clarity on project requirements before starting on the work
+- *Learning new technology on the fly*
+    - **Solution**: I spent two weeks going over tutorials, demos, and documentation to fill the knowledge gap that came along with being new to a project / technology
+    - **Outcome**: I learned how to decipher between what's needed and what not needed for the project I'm working on; how to not waste time learning unnecessary topics
+- *Ability to communicate internationally and cross-team*
+    - **Solution**: I spent every morning meeting with the team in Bangalore so that we could clarify end-to-end requirements, test solutions, and make sure everything is working as expeected
+    - **Outcome**: I gained an understanding of how cross-team / international communication works at the enterprise level, and how to use technology to deal with communication barriers
+- *Ability to ask questions to the right people*
+    - **Solution**: I stayed in constant communication with the SRE team to ask questions about the technologies I was unfamiliar with
+    - **Outcome**: I was able to get a better understanding of how the system worked and how different parts of the system communicate with each other to make the overall product
+- *Ability to deliver features on time*
+    - **Solution**: I reached out to the people I needed to in order to get new features to production on time
+    - **Outcome**: I gained a good understanding of how rigorous the approval process is for getting features into production while helping the company deliver on their promises to their customers
 
-There are several challenges we have to consider when developing for large-scale enterprise systems. First and foremost, we have to gather and understand the requirements for our system/product. What is the problem we're trying to solve? An example might be: "As a person who lives in a high-traffic area, I would like to get navigational directions to my destination that will save me the most time." What are the functional requirements and quality attributes of the system? Most of the time, we'll have to consult people with domain expertise to make sure that our requirements and quality attributes are feasible. An example of a quality attribute would be: "When a user searches for a route to their destination, they'll be provided with the fastest route within *at most* 300 milliseconds." Are there any system constraints that we must consider? These may be technical or business constraints, for example, we might be locked-in to a specific cloud vendor or we might have a limited budget. Now, before we define our architecture, we should define what our APIs would look like first. Will these APIs serve frontend clients, backend clients, and/or internal systems? Will our APIs be public or private? Will we use architectural styles like REST, SOAP, RPC, or something like GraphQL? For example, if we want to give the user more control over API requests for retrieving precise data, GraphQL would be a good candidate. Should we use pagination for large payloads? Most likely, we want to limit the amount of data that gets transferred over to the client to have higher throughput and prevent latency. Next, we can start thinking about the building blocks of our architecture. Do we need to include load balancing for better availability and throughput? What about message brokers for long/asynchronous requests? Should we use a CDN for quicker delivery of static files? Do we want to use a relational database like PostgreSQL to store user data? What about security? Should we use access tokens or certificates for user authorization? Do we need to use non-relational databases for simple data and caching? After answering these questions, we should pick an architecture (Monolith, Microservices, Multi-Tier, Lambda, etc.) that would best suite the service or system. Picking the right architecture for the job will allow the system to grow/scale more seamlessly than if we picked an architecture that didn't fit. For example, because Netflix picked a microservices architecture for many of its services, teams are able to scale and improve independent services without having to wait for other teams. On the other hand, microservices may not be the best for a note taking application like Evernote. In this case a simple three-tier architecture (Presentation, Application, Data) would do.
+### Certificates
 
-### Understand how to address legacy integrations
-
-We can address legacy integrations by embracing architectures that allow us to integrate heterogenous system across our enterprise. For example, if we wanted to move a legacy system to Microservices, we could use Service-Oriented Architecture (SOA) for this migration. With SOA, applications that use different protocols can speak to each other through a **messaging middleware**; in other words, it's protocol agnostic. For example, if we were migrating from an old legacy Java application that uses SOAP to a Node.js application that uses REST, the Node.js application could "speak" to the legacy Java application through the messaging middleware. This is great because now we can start to retire parts of our legacy application as we work toward making the newer Node.js application stable.
+- [🎗️ Large Scale Systems Architecture Certificate](/Certificates/Large%20Scale%20Systems%20Architecture.pdf) (Video Based)
+    - Includes conceptual examples
+- [🎗️ Enterprise Security Certificate](/Certificates/Enterprise%20Security%20Certificate.pdf) (Video Based)
+    - Includes conceptual examples

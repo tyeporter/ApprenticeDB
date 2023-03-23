@@ -1,51 +1,84 @@
 # Understand and demonstrate how to build and test quality code, at scale
 
-### Understand how to build quality code at scale
+## Table of Contents
+- [Demonstration](#demonstration)
+- [Certificates](#certificates)
 
-Building quality code at scale involves adhering to good software engineering practices like Agile development, Scrum, SOLID principles and Clean Architecture. It also involves using modern practices like Continuous Development and Continuous Integration and making sure that code is being tested at every step of the Software Development Lifecycle.
+### Demonstration
 
-Testing and CI/CD demonstration:
+The only project I worked on during my learning that involved building and testing quality code at scale was for the [🏗 Udagram](https://github.com/4orter/Learning/tree/main/Udacity/Fullstack%20JavaScript%20Nanodegree/nd0067-c4-deployment-process-project-starter) project in Udacity's [Full Stack JavaScript program](https://www.udacity.com/course/full-stack-javascript-developer-nanodegree--nd0067). This project was assigned for the 4th (and last) module of the course: **"Deployment Process"**. The goal for the project was to take a Full Stack application, configure a CI / CD pipeline for the project to be built, tested and deployed from, and configure set of AWS services that will host the application.
 
-![](/Images/circleci_1.png)
-![](/Images/circleci_2.png)
+#### **OBJECTIVES & OUTCOMES**
 
-### Understand the techniques used for ensuring quality
+The reason for building the project was to demonstrate that I had gained the necessary knowledge to build, test, and deploy a fullstack application at using a CI / CD pipeline. Topics covered in this module included:
+- Tools and Environments needed for the deployment process
+- Building a production-ready development environment
+- Creating users using AWS IAM (Identity and Access Management)
+- Creating databases with AWS RDS (Relational Database Service)
+- Creating a web app environment instance with Elastic Beanstalk
+- Creating "Buckets" using AWS S3 (Simple Storage Service)
+- Deploying to S3 using AWS CLI
+- Deploying to Elastic Beanstalk using EB CLI
 
-[🎗️ Certificate](/Certificates/Test-Driven%20Development%20Certificate.pdf)
-- **"Test-Driven Development in Action"** Section
-- **"Strategies and Techniques for Testing Code"** Section
-- **"Looking out for Test-Driven Development Gotchas"** Section
+After the training, I was able to:
+- Configure CI/CD pipeline using Github, CircleCI and AWS
+- Configure job that requires manual deployment using CircleCI
+- Configure a PostgreSQL database with required specs using AWS RDS
+- Configure a Node.js environment for the backend application using Elastic Beanstalk
+- Configure a "bucket" of resources available to the public using AWS S3 so that users can access the frontend application 
+- Configure CircleCI "Orb" for setting up server to download necessary tools (Node.js, AWS CLI, EB CLI, etc.) and secrets so that it can build, test, and deploy apps to configured AWS environments 
 
-### Understand the different types of testing, where to apply them, and the relative amounts
+#### **PROJECT REQUIREMENTS**
+As per the requirements, the application and pipeline needed to have the following functionality:
+- Application
+    - Allow user to register using name, email, and password
+    - Encrypt user password using bcrypt and persist details in a PostgreSQL database
+    - Allows users to sign in using email and password 
+    - Authorize profile access and manage session using JWTs
+    - Allow signed up users to upload photos to their profile
+    - Allow users to view a feed of uploaded photos
+- Pipeline
+    - Ability to install dependencies needed to run and test the front and backend applications using CircleCI
+    - Ability to run tests for both applications using CircleCI
+    - Ability to build a production version of the applications using CircleCI
+    - Ability to manually deploy the production builds of the applications to AWS using CircleCI
+    - Ability to host the production builds of the applications using AWS
 
-[🎗️ Certificate](/Certificates/Test-Driven%20Development%20Certificate.pdf)
+#### **PIPELINE ARCHITECTURE**
+You can find diagrams of the architecture I used in the projects [screenshots]() directory, but I will describe and show here as well.
 
-- **"Different Ways of Testing Application"** Section
+- Continuous Integration and Development
+    - Github (Code Repository)
+    - Github Actions (Initiate CI / CD Process; Pushing Updates CircleCI)
+    - CircleCI (For Building, Testing, and Deploy)
 
-### Understand the successful use of test coverage tools
+    <br>
 
-The successful use of test coverage tools involves using coverage metrics to make informed decisions on how we can improve the *quality* of our tests and essentially increase the percentage of code covered by tests.
+    ![](/Images/pipeline_diagram.png)
+    
+- Hosting
+    - AWS S3 (For Hosting Frontend)
+    - Elastic Beanstalk (For Hosting Backend)
+    - AWS RDS (For Hosting Database)
 
-Code coverage tool demonstration:
+    <br>
 
-![](/Images/code_coverage.png)
+    ![](/Images/infrastructure_diagram.jpg)
+![](https://github.com/4orter/Learning/blob/main/Udacity/Fullstack%20JavaScript%20Nanodegree/nd0067-c4-deployment-process-project-starter/screenshots/pipeline_diagram.png)
 
-### Understand successful use of performance testing
 
-The successful use of performance testing involves using performance metrics to make decisions on how to improve the *performance* of our application/services. Performance testing tools like Artillery and JMeter will simulate sending several requests (load) to our API which will help us test how our service performs under different stressors. This allows us to uncover issues like poor performing code, memory leaks, long response times, etc. It will also give us insights into how we may want to scale our application. Maybe under certain stress we would want to horizontally scale (our application) versus vertically scale (our resources), or vice-versa.
-
-### Understand successful use of boundary and limit testing
-
-The successful use a boundary testing involves using ranges (or partitions) to test the limits of functionality within our application, given that our code is modular and testable. For example, we may have a request service in our application that allows users of different tiers to make requests within a certain range:
-- Starter Tier  
-    - 1 - 500 req. / month
-- Regular Tier
-    - 1 - 10000 req. / month
-- Enterprise Tier
-    - 1 - 1000000 req. / month
-
-When it comes to our request service, the above partitions are *valid*. For example, the amount of requests serviced for a Starter Tier user should fall within the range of 1 - 500. Anything falling outside of this range would be *invalid* and therefore would fail the boundary test.
-
-### Understand successful use of chaotic testing
-
-The successful use fo chaotic testing involves using tools like Gremlin and Load Impact to improve the *resiliency* of our software infrastructure. For example, our application should be able to replicate itself if it's under heavy load or one of its instances is terminated. If an AWS availability zone shuts down, AWS should have the infrastructure in place to recover that zone, and we should still be able to service customers while the zone is down. If one of our databases becomes corrupted, we should have replicas in place that will replace it. By exposing the weak points of our infrastructure, chaotic testing helps improve our service's reliability and availability. Therefore, increasing the confidence that users have in our product.
+### Certificates
+- [🎗️ Full Stack JavaScript Developer Certificate](/Certificates/Full%20Stack%20JavaScript%20Developer%20Certificate.pdf) (Merit Based)
+    - Includes videos, quizzes and graded projects
+- [🎗️ Test-Driven Development Certificate](/Certificates/Test-Driven%20Development%20Certificate.pdf) (Concept / Video Based)
+    - Includes coding examples
+- [🎗️ Clean Code Certificate](/Certificates/Clean%20Code%20Certificate.pdf) (Concept / Video Based)
+    - Includes coding examples
+- [🎗️ Building Development Environments](/Certificates/Development%20Environment%20Certificate.pdf) (Concept / Video Based)
+    - Includes coding examples
+- [🎗️ Github Certificate](/Certificates/Github%20Certificate.pdf)  (Concept / Video Based)
+    - Includes examples
+- [🎗️ Continuous Integration and Development Certificate](/Certificates/CICD%20Certificate.pdf) (Concept / Video Based)
+    - Includes examples
+- [🎗️ Jenkins Certificate](/Certificates/Jenkins%20Certificate.pdf) (Concept / Video Based)
+    - Includes  examples
