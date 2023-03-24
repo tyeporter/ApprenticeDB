@@ -20,7 +20,7 @@ There are several challenges we have to consider when developing for large-scale
 ### Example
 An example that I can go to is when I worked on the ZScalar project. There were a few complex situations that I have to deal with and navigate while working in this project such as:
 - *Gathering and clearly understanding new requirements*
-    - **Solution**: I spent a week meeting with my project manager to go over requirements, share my solutions and understanding, and testing several ideas
+    - **Solution**: I spent a week meeting with the project architect to go over requirements, share my solutions and understanding, and testing several ideas
     - **Outcome**: I learned how to be proactive about getting clarity on project requirements before starting on the work
 - *Learning new technology on the fly*
     - **Solution**: I spent two weeks going over tutorials, demos, and documentation to fill the knowledge gap that came along with being new to a project / technology
